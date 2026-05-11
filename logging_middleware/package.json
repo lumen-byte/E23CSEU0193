@@ -1,0 +1,16 @@
+{
+  "name": "logging_middleware",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Reusable logging middleware for Express applications",
+  "main": "src/logger.js",
+  "scripts": {
+    "test": "node --env-file=.env -e \"import { Log } from './src/logger.js'; Log('backend','info','config','Logger loaded'); Log('backend','warn','service','Warning test'); Log('backend','error','handler','Error test'); console.log('All tests passed');\""
+  },
+  "author": "Abhimanyu",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.16.0",
+    "dotenv": "^17.4.2"
+  }
+}
